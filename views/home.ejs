@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+<div class="dis-flex-home-center">
+  <div class="home-page-class">
+    <h1>Discover other secrets and share your own secrets anonymously.</h1>
+    <p class="p1-home">
+      We are helping people to know their favourites secret without publish
+      their names
+    </p>
+    <a href="/submit">
+      <button class="submit-button-home">Submit a Secret</button>
+    </a>
+    <h2>Peoples Secrets below:</h2>
+    <p class="secret-p">I love to play cricket!</p>
+    <% sec.map(userWithSecret => { %>
+        <p class="secret-p">
+            <%= userWithSecret.userSecret %>
+        </p>
+   <% }) %>
+  </div>
+</div>
+<%- include('partials/footerallright'); -%> <%- include('partials/footer'); -%>

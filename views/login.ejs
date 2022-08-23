@@ -1,0 +1,43 @@
+<%- include('partials/header'); -%>
+<div class="login-background">
+    <div class="login-tag">
+        <h1>User Login</h1>
+        <div class="login-form-area">
+            <form action="/login" method="post" class="log-form">
+              <input
+                type="email"
+                name="username"
+                placeholder="User@name"
+                class="input-login"
+                autocomplete="off"
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="input-login"
+                autocomplete="current-password"
+                required
+              />
+              <button type="submit" class="login-btn">LOGIN</button>
+            </form>
+            <div class="google-margin-center">
+              <a class="goolge-a-login" href="/auth/google">
+                <button class="google-login-button">
+                  <img src="/images/google.png" alt="" class="google-logo" />
+                  Login with Google
+                </button>
+              </a>
+              <a class="goolge-a-login" href="/auth/github">
+                <button class="google-login-button">
+                  <img src="/images/github.png" alt="" class="google-logo" />
+                  Login with Github
+                </button>
+              </a>
+            </div>
+          </div>
+          <p>Don't have account? <a href="/register" class="create-account-a">Create new account <img src="images/move.png" alt="" class="google-logo"></a></p>
+    </div>
+</div>
+<%- include('partials/footer'); -%>

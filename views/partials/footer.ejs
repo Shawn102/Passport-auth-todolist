@@ -1,0 +1,36 @@
+<script>
+    const toggleBtn = document.querySelector(".toggle-btn");
+    const links = document.querySelector(".linksNav");
+    const social = document.querySelector(".social-links");
+    toggleBtn.addEventListener("click", function () {
+      links.classList.toggle("showLinks");
+      social.classList.toggle("show-social-links");
+    });
+
+    const btnModelOpen = document.querySelector(".but-mar-lf");
+    const modelDiv = document.querySelector(".absolute-hide-content");
+    const ModelCloseBtn = document.querySelector(".close-submit-model");
+    const submitSecretBtn = document.querySelector(".sub-close-when-sub");
+
+    btnModelOpen.addEventListener("click", () => {
+        modelDiv.classList.add("show-submit-model");
+    });
+    ModelCloseBtn.addEventListener("click", () => {
+        modelDiv.classList.remove("show-submit-model");
+    });
+    submitSecretBtn.addEventListener("submit", () => {
+        modelDiv.classList.remove("show-submit-model");
+    });
+    
+    const typed = new Typed("#typed", {
+    strings: ["About author- Hi, This is Shawn, I'm a Software Engineer.", "Use this simple Todolist app, to save your necessary work.", "And I'm ensuring you about end to end encryption of your information :)", "Contact me at:<br/> <i style=\"font-size: 11px; padding:0 10px; color: white;\">shawnniamul58@gmail.com</i>"],
+    smartBackspace: true,
+    loop: true,
+    typeSpeed: 80,
+    backDelay: 3000,
+    backSpeed: 20,
+  });
+  
+  </script>
+</body>
+</html>

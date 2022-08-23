@@ -1,0 +1,66 @@
+<%- include('partials/header'); -%>
+<div class="login-background">
+  <div class="login-tag">
+    <h1>Register</h1>
+    <div class="login-form-area">
+      <form action="/register" method="post" class="log-form">
+        <label for="fullname" class="label1">Full Name:</label>
+        <input
+          type="text"
+          name="fullname"
+          placeholder="Your full name"
+          class="input-login"
+          autocomplete="off"
+          required
+        />
+        <label for="username" class="label1">Username:</label>
+        <input
+          type="email"
+          name="username"
+          placeholder="Your Email"
+          class="input-login"
+          autocomplete="off"
+          required
+        />
+        <label for="phone" class="label1">Phone Number:</label>
+        <input
+          type="tel"
+          name="phonenumber"
+          class="input-login"
+          placeholder="+ Your phone number"
+          required
+        />
+        <label for="password" class="label1">Password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          class="input-login"
+          required
+        />
+        <button type="submit" class="login-btn">SIGN UP</button>
+      </form>
+      <div class="google-margin-center">
+        <a class="goolge-a-login" href="/auth/google">
+          <button class="google-login-button">
+            <img src="/images/google.png" alt="" class="google-logo" />
+            Register with Google
+          </button>
+        </a>
+        <a class="goolge-a-login" href="/auth/github">
+          <button class="google-login-button">
+            <img src="/images/github.png" alt="" class="google-logo" />
+            Register with Github
+          </button>
+        </a>
+      </div>
+    </div>
+    <p>
+      Already have an account?
+      <a href="/login" class="create-account-a"
+        >Login Instead <img src="images/move.png" alt="" class="google-logo"
+      /></a>
+    </p>
+  </div>
+</div>
+<%- include('partials/footer'); -%>

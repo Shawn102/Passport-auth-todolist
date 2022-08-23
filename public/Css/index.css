@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Quintessential&family=Ubuntu&display=swap");
+
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --font-m: 'Montserrat', sans-serif;
+    --font-p: 'Pacifico', cursive;
+    --font-q: 'Quintessential', cursive;
+    --font-u: 'Ubuntu', sans-serif;
+}
+.mainNav{
+    background: silver;
+}
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    /* padding: 10px; */
+}
+.toggle-btn{
+    border: none;
+    cursor: pointer;
+}
+.toggle-btn-img{
+    width: 50px;
+    height: 50px;
+}
+.fa-bars{
+    font-size: 25px;
+    color: #0d76a0;
+}
+.imageLogo{
+    width: 80px;
+    border-radius: 50%;
+}
+.linksNav{
+    height: 0;
+    list-style: none;
+    overflow: hidden;
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--font-p);
+    transition: all 0.5s linear;
+}
+.linksNav li{
+    margin: 10px 0;
+    padding: 10px 0;
+    transition: all 0.3s linear;
+}
+.linksNav li:hover{
+    padding: 10px 20px;
+    background: rgb(235, 235, 233);
+    border-bottom: 3px solid gold;
+}
+.linksNav li a{
+    text-decoration: none;
+    color: rgb(145, 130, 0);
+    padding: 0 10px;
+}
+.links-btn{
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: var(--font-q);
+}
+.links-btn a{
+    text-decoration: none;
+    color: rgb(145, 130, 0);
+    border-color: rgb(145, 130, 0);
+    transition: all 0.3s;
+}
+.links-btn a:hover{
+    color: red;
+}
+.showLinks{
+    height: 230px;
+    list-style: none;
+    margin-left: -39px;
+}
+/* home page style */
+.dis-flex-home-center{
+    background: url(/images/neon.jpg) center/cover no-repeat;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+.home-page-class{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: var(--font-u);
+    letter-spacing: 0.1rem;
+}
+.p1-home{
+    padding: 20px 0;
+    color: rgb(102, 255, 0);
+    font-family: var(--font-p);
+    letter-spacing: 0.2rem;
+}
+.submit-button-home{
+    color: rgb(102, 255, 0);
+    background: transparent;
+    border: 3px solid rgb(72, 180, 0);
+    font-family: var(--font-u);
+    letter-spacing: 0.1rem;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+    box-shadow: -3px -3px 10px greenyellow, 3px 3px 10px rgb(129, 214, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+}
+.secret-p{
+    background: rgba(3, 3, 3, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    margin: 10px 0;
+}
+.footer-text-p-copyright{
+    color: rgb(255, 0, 0);
+    /* background: wheat; */
+    text-align: center;
+    padding: 10px 30px;
+    font-family: var(--font-q);
+    letter-spacing: 0.1rem;
+}
+.type-speed-js{  
+    text-align: center;
+    /* background: wheat; */
+    letter-spacing: 0.1rem;
+    /* height: 100px; */
+}
+#typed{
+    color: rgb(86, 138, 250);
+    font-family: var(--font-u);
+}
+
+/* Login page design */
+.login-background{
+    background: url(/images/loginBackground.jpg) center/cover no-repeat;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+.login-tag{
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    padding: 20px;
+}
+.login-tag h1,p{
+    color: white;
+    text-align: center;
+    font-family: var(--font-q);
+    letter-spacing: 0.1rem;
+    padding: 10px 20px 20px 20px;
+} 
+.login-tag p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.create-account-a{
+    font-family: var(--font-u);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    background: rgba(245, 244, 244, 0.5);
+    border-radius: 5px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.create-account-a:hover{
+    /* border: 1px solid rgb(255, 97, 97); */
+    color: rgb(255, 247, 2);
+}
+.log-form{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 10px;
+    /* border: 2px solid white; */
+}
+.label1{
+    color: white;
+    font-family: var(--font-p);
+    letter-spacing: 0.1rem;
+}
+.input-login{
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    margin: 0 0 20px 0;
+    border: 3px solid rgb(53, 132, 0);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.input-login:hover{
+    border: 3px solid rgb(127, 255, 42);
+
+    box-shadow: -1px -1px 10px greenyellow, 1px 1px 10px rgb(129, 214, 0);
+}
+
+.goolge-a-login{
+    text-decoration: none;
+}
+.google-login-button{
+    color: goldenrod;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 100%;
+    margin: 15px 0 0 0;
+    border: 2px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px greenyellow, 2px 2px 5px rgb(153, 255, 0);
+}
+.login-btn{
+    width: 100%;
+    color: rgb(253, 253, 253);
+    background: transparent;
+    border: 3px solid rgb(116, 255, 24);
+    font-family: var(--font-q);
+    letter-spacing: 0.2rem;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px white;
+    box-shadow: -3px -3px 10px greenyellow, 3px 3px 10px rgb(129, 214, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+}
+.google-logo{
+    width: 30px;
+    margin-right: 5px;
+}
+/* Secret submit page style */
+.todolist-background{
+    background: url(/images/todolist.jpg) center/cover no-repeat;
+    min-height: 90vh;
+    color: white;
+    position: relative;
+    padding: 50px 30px;
+}
+.button-dis-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.but-mar-ra{
+    /* margin-right: 10px; */
+}
+.but-mar-lf{
+    /* margin-left: 10px; */
+}
+.absolute-hide-content{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+.show-submit-model{
+    transform: scale(1);
+}
+.close-submit-model{
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+}
+.cross-logo{
+    width: 25px;
+    cursor: pointer;
+}
+.form-secret-submit{
+    /* position: absolute; */
+    /* top: 35%;
+    left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 90%;
+    max-width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(96, 96, 96, 0.5);
+    box-shadow: -2px -2px 5px rgb(136, 135, 135), 2px 2px 5px white;
+    backdrop-filter: blur(2px);
+}
+.secret-sub-padding{
+    padding: 40px 20px;
+}
+.label-secret{
+    font-family: var(--font-q);
+    letter-spacing: 0.1rem;
+}
+.sec-inp{
+    margin: 10px 0;
+}
+.todolist-margin{
+    margin: 50px auto;
+}
+.todolist-margin h1{
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--font-q);
+}
+.textarea{
+    resize: none;
+}
+.todolist-dis-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.todolistItems-display{
+    width: 100%;
+    max-width: 320px;
+    background: rgba(0, 0, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: inset -3px -3px 5px white, inset 3px 3px 5px rgb(78, 77, 77);
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+.list-delete-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.button-delete-list{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.delete-logo{
+    width: 17px;
+}
+@media screen and (max-width: 799px) {
+    .regiClass{
+        display: block;
+        border-bottom: 3px solid black;
+    }
+    /* login page design */
+    .google-margin-center{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+}
+@media screen and (min-width: 380px)  {
+    /* submit page button logout and secret */
+    .but-mar-ra{
+        margin-right: 10px;
+    }
+    .but-mar-lf{
+        margin-left: 10px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .toggle-btn{
+        display: none;
+    }
+    .mainNav{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+    }
+    .linksNav{
+        height: auto;
+        display: flex;
+        list-style: none;
+    }
+    .linksNav li{
+        margin: 0 10px;
+        padding: -10px 0;
+    }
+    .linksNav li:hover{
+        padding: 0;
+    }
+    .linksNav li a{
+        color: rgb(148, 126, 0);
+        text-decoration: none;
+    }
+    .regiClass{
+        border-right: 3px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+    /* login page design */
+    .login-tag{
+        max-width: 700px;
+    }
+    .login-form-area{
+        display: flex;
+        justify-content: space-between;
+    }
+    .google-login-button{
+        margin: 32px 0 0 0;
+    }
+}
